@@ -1,0 +1,148 @@
+/* Header Styles */
+
+/* ------------------------------------------- */
+header{
+    /* Bloque Padre del Header */
+    width: 100%; height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+/* ------------------------------------------- */
+
+
+/* ------------------------------------------- */
+nav{
+    /* Bloque Padre del nav */
+    width: 100%; height: 80px;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.nav-links{
+    /* Es el contenedor de todos los enlaces del nav. */
+    width: 50%; height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links-link{
+    /* Estilos para los enlaces del nav. */
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-links-link:hover{
+    /* Hover para los enlaces del nav. */
+    color: rgb(202, 207, 210);
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+.header-texts{
+    /* Es el contenedor de la presentación donde esta el título el párrafo y las redes sociales. */
+    width: 50%; height: auto;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px; left: 50px;
+    padding: 10px;
+    box-shadow: 0px 10px 5px;
+}
+
+.header-texts-paragraph{
+    /* Primer párrafo del header-texts */
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.header-texts-title{
+    /* Título del header-texts */
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.header-texts-redes{
+    /* Es el contenedor de las imágenes de las redes sociales. */
+    width: 100%; height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-texts-redes-images{
+    /* Imágenes de las Redes Sociales. */
+    width: 60px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Media Querys */
+/* --------------------------------------------------------------------------------------------- */
+
+/* A los 1200px adaptamos lo siguiente: */
+@media(max-width: 1200px){
+
+    .header-texts-title{
+        font-size: 40px;
+    }
+
+}
+
+/* A los 800px adaptamos lo siguiente: */
+@media(max-width: 800px){
+
+    /* La posición de background pasa a ser center. */
+    header{
+        background-position: center;
+    }
+
+    /* El contenedor nav aumenta su tamaño de alto. */
+    nav{
+        height: 180px;
+    }
+
+    /* Al contenedor de los links se le cambia el flex-direction y se lo adapta al contenedor padre. */
+    .nav-links{
+        width: 100%; height: 100%;
+        flex-direction: column;
+    }
+
+    /* Cambiamos el tamaño de los enlaces. */
+    .nav-links-link{
+        width: 100%;
+    }
+
+    /* Se adapta el contenedor. */
+    .header-texts{
+        position: static;
+        width: 100%; height: auto;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
+/* A los 680px adaptamos lo siguiente: */
+@media(max-width: 680px){
+
+    /* El título del header-text velve a cambiar de tamaño. */
+    .header-texts-title{
+        font-size: 40px;
+    }
+
+    .header-texts-redes-images{
+        width: 40px;
+    }
+
+}
