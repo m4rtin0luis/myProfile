@@ -44,8 +44,10 @@ nav{
     /* Hover para los enlaces del nav. */
     color: rgb(202, 207, 210);
 }
+
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+
 .header-texts{
     /* Es el contenedor de la presentación donde esta el título el párrafo y las redes sociales. */
     width: 50%; height: auto;
