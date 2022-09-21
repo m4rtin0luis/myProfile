@@ -9,19 +9,23 @@ main{
 }
 
 .main-section-about{
+    /* Es el contenedor del section about me. */
     /* border: 1px solid black; */
     width: 90%; height: 100vh;
     margin-top: 10px;
     text-align: center;
 }
 
+
 .main-section-about h2{
+    /* Título del about me. */
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     margin-top: 30px;
 }
 
 .main-section-about p{
+    /* Párrafo del about me. */
     font-family: 'Dosis', sans-serif;
     font-size: 24px;
     margin-top: 30px;
@@ -41,23 +45,67 @@ main{
 /* ------------------------------------------- */
 
 .main-section-projects{
-    display: none;
-}
-
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-
-.main-section-projects{
-    border: 1px solid black;
-    width: 90%; height: 100vh;
+    /* border: 1px solid black; */
+    width: 90%; height: auto;
     margin-top: 10px;
     text-align: center;
 }
 
-.main__section-projects h2{
+.main-section-projects h2{
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     margin-top: 30px;
+}
+
+.main-section-projects-container-card{
+    /* border: 1px solid black; */
+    width: 100%; height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    /* border: 1px solid black; */
+    width: 30%; height: auto;
+    background-color: rgb(248, 249, 249);
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px;
+    margin: 30px 20px;
+}
+
+.card h3{
+    /* border: 1px solid white; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    color: black;
+    margin-top: 10px;
+
+}
+
+.card img{
+    width: 96%;
+    border-radius: 40px;
+    padding: 20px 5px;
+}
+
+.card p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.card a{
+    /* border: 1px solid white; */
+    display: block;
+    width: 200px; height: auto;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 6px 0px;
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -73,5 +121,14 @@ main{
 
     .main-section-about-redes-images{
         width: 80px;
+    }
+
+    .card{
+        width: 90%; height: 600px;
+    }
+
+    .main-section-projects-container-card{
+        flex-direction: column;
+        align-items: center;
     }
 }
