@@ -144,6 +144,32 @@ main{
     margin-top: 30px;
 }
 
+.main-section-skills-container{
+    /* border: 1px solid black; */
+    width: 90%; height: 180px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.main-section-skills-container img{
+    width: 170px;
+    margin: 0 30px;
+}
+
+.main-section-skills-other-container{
+    /* border: 1px solid black; */
+    width: 60%; height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-section-skills-other-container img{
+    width: 100px;
+}
+
 
 /* --------------------------------------------------------------------------------------------- */
 /* Media Querys */
@@ -169,4 +195,15 @@ main{
         flex-direction: column;
         align-items: center;
     }
+
+    .main-section-skills-container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section-skills-container img{
+        width: 220px;
+    }
+
 }
