@@ -13,6 +13,7 @@ header{
 /* ------------------------------------------- */
 nav{
     /* Bloque Padre del nav */
+    /* border: 1px solid white; */
     width: 100%; height: 80px;
     background-color: rgb(0, 0, 0, 0.4);
     display: flex;
@@ -22,6 +23,7 @@ nav{
 
 .nav-links{
     /* Es el contenedor de todos los enlaces del nav. */
+    /* border: 1px solid white; */
     width: 50%; height: 50%;
     display: flex;
     justify-content: center;
@@ -38,6 +40,7 @@ nav{
     color: white;
     text-decoration: none;
     padding: 5px;
+    margin: 0 6px;
 }
 
 .nav-links-link:hover{
@@ -57,7 +60,7 @@ nav{
     position: absolute;
     top: 200px; left: 50px;
     padding: 10px;
-    box-shadow: 0px 10px 5px;
+    box-shadow: 0px 15px 5px;
 }
 
 .header-texts-paragraph{
@@ -85,6 +88,11 @@ nav{
 .header-texts-redes-images{
     /* Imágenes de las Redes Sociales. */
     width: 60px;
+}
+
+.header-texts-redes-images:hover{
+    width: 90px;
+    transition: 0.5s;
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -149,6 +157,11 @@ nav{
 
     .header-texts-redes-images{
         width: 40px;
+    }
+
+    .header-texts-redes-images:hover{
+        width: 70px;
+        transition: 0.9s;
     }
 
 }
