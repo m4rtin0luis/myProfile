@@ -1,0 +1,56 @@
+/* index.css */
+
+/* ---------------------------- */
+/* CUSTOM PROPERTIES. */
+/* ---------------------------- */
+:root{
+    --tipografiaTitulos: 'Oswald', sans-serif;
+    --tipografiaEnlacesParrafos: 'Dosis', sans-serif;
+    --backgroundTransparent: rgb(0, 0, 0, 0.6);
+}
+
+
+/* ---------------------------- */
+/* HEADER */
+/* ---------------------------- */
+
+/* Contenedor principal header. */
+header{
+    width: 100%; height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+/* Contenedor principal nav. */
+nav{
+    width: 100%; height: 80px;
+    background-color: var(--backgroundTransparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal de los Enlaces del nav. */
+.nav-links{
+    width: 50%; height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------- */
+/* MAIN */
+/* ---------------------------- */
+
+
+
+/* ---------------------------- */
+/* FOOTER */
+/* ---------------------------- */
+
+
+
+/* ---------------------------- */
+/* MEDIA QUERYS */
+/* ---------------------------- */
